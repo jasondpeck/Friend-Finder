@@ -140,7 +140,7 @@
 		<hr>
 	    <footer class="footer">
 	      <div class="container">
-		        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/jasondpeck/FriendFinder">GitHub Repo</a></p>
+		        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/jasondpeck/Friend-Finder">GitHub Repo</a></p>
 	      </div>
 	    </footer>
 	</div>
@@ -207,7 +207,7 @@
 	    	// AJAX post using survey data
 	    	$.post(currentURL + "/api/friends", userData, function(data){
 
-	    		//Gets result from AJAX post, displays modal displaying best match
+	    		//displays modal displaying best match
 	    		$("#matchName").text(data.name);
 	    		$('#matchImg').attr("src", data.photo);
 		    	$("#resultsModal").modal('toggle');
